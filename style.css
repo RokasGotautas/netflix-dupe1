@@ -125,3 +125,49 @@ font-size: 75px;
     font-size: 50px;
     margin-bottom: 10px;
 }
+
+/* FAQ */
+
+.container h1 {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+
+details {
+    background-color: #303030;
+    color: #fff;
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    margin: 10px auto;
+    width: 70%;
+}
+
+summary {
+    padding: 0.5rem 1.3rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+summary::-webkit-details-marker {
+    display: none;
+}
+
+summary:after {
+    content: "\002B";
+    font-size: 1.5rem;
+    margin-left: auto;
+}
+
+details[open] summary {
+    border-bottom: 1px solid black;
+}
+
+details[open] summary:after {
+    content: "\00D7";
+}
